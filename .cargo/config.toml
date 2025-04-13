@@ -1,0 +1,14 @@
+[build]
+target = 'avr-none'
+rustflags = ["-C", "target-cpu=atmega328p"]
+
+[unstable]
+build-std = ["core", "alloc"]
+
+[profile.dev]
+opt-level = 0 # changing this to 1 works
+panic = 'abort'
+
+[profile.release]
+opt-level = 0 # changing this to 1 works
+panic = 'abort'
