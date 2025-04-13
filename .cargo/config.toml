@@ -3,7 +3,7 @@ target = 'avr-none'
 rustflags = ["-C", "target-cpu=atmega328p"]
 
 [unstable]
-build-std = ["core", "alloc"]
+build-std = ["core"]
 
 [profile.dev]
 opt-level = 0 # changing this to 1 works
